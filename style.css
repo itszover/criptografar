@@ -1,0 +1,190 @@
+:root {
+  --dark-blue-100: #609ed4;
+  --dark-blue-200: #356ea9;
+  --dark-blue-300: #0a3871;
+  --dark-blue-400: #072b61;
+  --dark-blue-500: #052051;
+
+  --ligth-blue-100: #f3f5fc;
+  --ligth-blue-200: #eff1fa;
+  --ligth-blue-300: #e9ecf8;
+  --ligth-blue-400: #aab2d5;
+  --ligth-blue-500: #757fb2;
+
+  --gray-100: #ced4da;
+  --gray-200: #adb5bd;
+  --gray-300: #868e96;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--ligth-blue-300);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--ligth-blue-400);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--ligth-blue-100);
+  height: 100vh;
+}
+
+/*____________________MAIN______________________*/
+main {
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/*______________________L-CARD_____________________*/
+.l-card {
+  height: 90%;
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/*_____________INPUT-BOX_______________*/
+.input {
+  color: var(--dark-blue-300);
+  background: none;
+  border: none;
+  resize: none;
+
+  font-size: 32px;
+
+  height: 70vh;
+  width: 46vw;
+}
+
+.input::placeholder {
+  color: var(--dark-blue-300);
+}
+
+.input:focus-visible {
+  outline: none;
+}
+/*_____________EXC-BOX_______________*/
+.exc-box {
+  display: flex;
+  justify-content: start;
+  align-self: center;
+
+  font-size: 12px;
+
+  color: var(--gray-400);
+}
+
+.exc-img {
+  margin-left: 10px;
+  margin-right: 6px;
+}
+
+/*_____________BUTTONS_______________*/
+.button {
+  width: 15vw;
+  padding: 24px;
+  margin: 10px;
+
+  border-radius: 24px;
+  border: 1px solid var(--dark-blue-300);
+  background: none;
+
+  transition: 300ms ease-out;
+
+  font-size: 16px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.l-button {
+  color: white;
+  background-color: var(--dark-blue-300);
+}
+
+.l-button:hover {
+  background-color: var(--dark-blue-400);
+}
+
+.r-button {
+  color: var(--dark-blue-300);
+}
+
+.r-button:hover {
+  background-color: var(--ligth-blue-200);
+}
+
+/*__________R-CARD_____________*/
+
+.r-card {
+  margin: 40px;
+  padding: 32px;
+
+  height: 90%;
+  width: 25%;
+
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+
+  background-color: white;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.r-card .big-txt {
+  font-size: 24px;
+  color: var(--gray-500);
+}
+
+.r-card .small-txt {
+  font-size: 16px;
+  color: var(--gray-400);
+}
+
+.text-crypt {
+  display: none;
+  justify-content: space-between;
+}
+
+.new-txt {
+  height: 100%;
+  width: 75%;
+
+  background: none;
+  border: none;
+  resize: none;
+
+  font-size: 24px;
+  color: var(--gray-400);
+}
+
+.new-txt:focus-visible {
+  outline: none;
+}

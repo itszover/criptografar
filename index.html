@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/exclamation_sign.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Criptografar</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="l-card">
+          <div class="input-box">
+            <textarea class="input" placeholder="Digite seu texto"></textarea>
+          </div>
+
+          <div class="buttons-box">
+            <div class="exc-box">
+              <img
+                class="exc-img"
+                src="./images/exclamation_sign.svg"
+                alt="Ponto de exclamação"
+              />
+              <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+
+            <button class="l-button button" type="button">Criptografar</button>
+            <button class="r-button button" type="button">
+              Descriptografar
+            </button>
+          </div>
+        </div>
+
+        <div class="r-card main-card">
+          <img src="./images/no_msg_img.svg" alt="Desenho de pessoa com lupa" />
+          <h3 class="big-txt">Nenhuma mensagem encontrada</h3>
+          <p class="small-txt">
+            Digite um texto que você deseja criptografar ou descriptografar
+          </p>
+        </div>
+
+        <div class="r-card text-crypt">
+          <textarea class="new-txt" placeholder="..."></textarea>
+          <button class="copy-b button r-button" type="button">Copiar</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
