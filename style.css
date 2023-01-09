@@ -188,3 +188,41 @@ main {
 .new-txt:focus-visible {
   outline: none;
 }
+
+@media (max-width: 412px) {
+  .main-container {
+    height: 100vh;
+  }
+
+  .l-card {
+    height: 70%;
+    width: 100%;
+  }
+
+  .input {
+    height: 280px;
+    width: auto;
+  }
+
+  .main-card img {
+    display: none;
+  }
+
+  .r-card {
+    height: 40%;
+    width: 90%;
+  }
+
+  .main-container,
+  .buttons-box {
+    flex-direction: column;
+  }
+
+  .buttons-box {
+    display: flex;
+  }
+
+  .button {
+    width: 90vw;
+  }
+}
