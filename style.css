@@ -189,7 +189,7 @@ main {
   outline: none;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 450px) {
   .main-container {
     height: 100vh;
   }
@@ -224,5 +224,9 @@ main {
 
   .button {
     width: 90vw;
+  }
+
+  .copy-b {
+    width: 80vw;
   }
 }
