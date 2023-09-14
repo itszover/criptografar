@@ -4,8 +4,8 @@ const l_button = document.querySelector(".l-button");
 const r_button = document.querySelector(".r-button");
 const copy_b = document.querySelector(".copy-b");
 
-const main_card = document.querySelector(".main-card");
-const text_crypt = document.querySelector(".text-crypt");
+const main_card_style = document.querySelector(".main-card").style;
+const text_crypt_style = document.querySelector(".text-crypt").style;
 const new_txt = document.querySelector(".new-txt");
 
 function encrypt(string) {
@@ -34,24 +34,24 @@ function copy(string) {
 
 l_button.addEventListener("click", () => {
   if (input.value.length > 0) {
-    main_card.style = "display: none";
-    text_crypt.style = "display: flex";
+    main_card_style = "display: none";
+    text_crypt_style = "display: flex";
 
     new_txt.innerHTML = encrypt(input.value);
   } else {
-    main_card.style = "display: flex";
-    text_crypt.style = "display: none";
+    main_card_style = "display: flex";
+    text_crypt_style = "display: none";
   }
 });
 
 r_button.addEventListener("click", () => {
   if (input.value.length > 0) {
-    main_card.style = "display: none";
-    text_crypt.style = "display: flex";
+    main_card_style = "display: none";
+    text_crypt_style = "display: flex";
     new_txt.innerHTML = decrypt(input.value);
   } else {
-    main_card.style = "display: flex";
-    text_crypt.style = "display: none";
+    main_card_style = "display: flex";
+    text_crypt_style = "display: none";
   }
 });
 
